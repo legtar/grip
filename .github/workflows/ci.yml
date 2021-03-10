@@ -1,0 +1,12 @@
+name: Selenium Jest Typescript Workflow
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: ./cli.sh build
+      - name: Test
+        run: ./cli.sh test

@@ -1,0 +1,38 @@
+{
+  "name": "jest-ts-selenium",
+  "version": "1.0.0",
+  "description": "Example of using selenium typescript and jest",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "jest",
+    "selenium",
+    "typescript",
+    "jest-environment",
+    "webdriver",
+    "webdriverio"
+  ],
+  "author": "Stephen Davidson",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/selenium-webdriver": "^4.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "chromedriver": "^88.0.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.20.0",
+    "jest": "^26.6.3",
+    "selenium-webdriver": "^4.0.0-beta.1",
+    "ts-jest": "^26.5.2",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "async-wait-until": "^2.0.3",
+    "webdriverio": "^6.7.0"
+  }
+}
