@@ -63,8 +63,8 @@ describe('login', () => {
     await driver.findElement(loginPage.nextButton).click()
     await driver.findElement(loginPage.linkForgotPassword).click()    
     await driver.findElement(loginPage.sendLinkButton).click()
-    await driver.wait(until.elementTextContains(await driver.findElement(loginPage.errorPasswordMessage),recoveryText1), 10000)
-    await driver.wait(until.elementTextContains(await driver.findElement(loginPage.errorPasswordMessage),recoveryText2), 10000)
+    await driver.wait(until.elementTextContains(await driver.findElement(loginPage.recoveryMessage),recoveryText1), 10000)
+    await driver.wait(until.elementTextContains(await driver.findElement(loginPage.recoveryMessage),recoveryText2), 10000)
 
   });
 
